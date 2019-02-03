@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1 id="title">Cubbon Pavilion Restaurant Survey</h1>
+	<div id="main-container">
+		<div>
+	<p id="description">Thank you for visiting our place. We would request you to take some time filling our feedback form!</p>
+	<form id="survey-form">
+
+
+		<div class="mainbox">
+			<div id="nameLabel" class="labelClass">
+				<label for="name" id="name-label">Name:</label>
+			</div>
+
+			<div class="rightTab">
+				<input type="text" id="name" class="input" placeholder="Enter your name" required>
+			</div>
+
+		</div>
+
+
+
+		<div class="mainbox">
+			<div id="emailLabel" class="labelClass">
+				<label for="email" id="email-label">Email:</label>
+			</div>
+
+			<div class="rightTab">
+				<input id="email" class="input" type="email" placeholder="Enter your email" required>
+			</div>
+		</div>
+
+
+		<div class="mainbox">
+			<div id="age" class="labelClass">
+				<label for="age" id="number-label">Age:</label>
+				</div>
+
+				<div class="rightTab">
+					<input id="number" class="input" type="number" min="1" max="100" placeholder="Enter your age" required>
+			</div>
+		</div>
+
+
+
+		<div class="mainbox">
+			<div id="choice" class="labelClass">
+				<label for="choice">How was your overall experience?</label>
+				</div>
+	
+		<div id="dropdown" class="rightTab">
+			<select id="select" class="input">
+				<option value="select">Select One</option>
+				<option value="great">It was Great</option>
+				<option value="okay">It was Okay!</option>
+				<option value="bad">It was Bad!</option>
+			</select>
+		</div>
+     </div>
+
+
+
+
+     <div class="mainbox">
+     	<div id="recommend1" class="labelClass">
+     		<label id="recommend2" for="recommendation">How likely is that you would recommend Cubbon Pavilion Restaurant?</label>
+     	</div>
+
+     	<div id="radioBtn" class="rightTab radioBtn">
+     		<input type="radio" name="recommend" value="yes"> Definitely </br>
+     		<input type="radio" name="recommend" value="maybe"> Maybe </br>
+     		<input type="radio" name="recommend" value="never"> Never </br>
+     	</div>
+     </div>
+
+
+
+
+     <div class="mainbox">
+     	<div id="checkLabel" class="labelClass">
+     		<p id="para" for="improvements">Things you would like us to improve: </p>
+     	</div>
+
+     	<div id="checkbox" class="rightTab">
+     		<label><input type="checkbox" name="improvements">Setting and atmosphere</label></br>
+     		<label><input type="checkbox" name="improvements">Service delivery</label></br>
+     		<label><input type="checkbox" name="improvements">Staff attitude</label></br>
+     		<label><input type="checkbox" name="improvements">Food</label></br>
+     		<label><input type="checkbox" name="improvements">Hygiene</label></br>
+     		<label><input type="checkbox" name="improvements">Value</label></br>
+     	</div>
+     </div>
+
+
+
+     <div class="mainbox">
+     	<div id="textlabel" class="labelClass">
+     		<p id="comments" for="feedback">Any comments or suggestions</p>
+     	</div>
+     	<div id="textarea" class="rightTab">
+     		<textarea rows="5" cols="40" placeholder="Enter your comments here..." required=""></textarea>
+     	</div>
+     </div>
+
+
+
+     <div id="submitBtn">
+     	<input id="submit" type="submit" value="Submit">
+     </div>
+	</form>
+</div>
+</body>
+</html>
